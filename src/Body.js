@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import { ArchiveBoxArrowDownIcon } from '@heroicons/react/24/solid';
 const Body = () => {
   const skills = [
     'C++',
