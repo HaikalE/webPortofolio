@@ -74,41 +74,41 @@ const Body = () => {
   ];
   const universityProjects = [
     {
-      title: 'Integrated Management System',
-      duration: 'Oct 2023 - Present',
+      title: 'Article Web App',
+      duration: 'Oct 2023',
       description: [
-        'The system is developed using PHP and MySQL for database management.',
-        'Developed a dedicated website for the Tahfidz Qur\'an Foundation.',
-        'Implemented an automated administrative management system.',
-        'Created an updateable student memorization monitoring module.',
+        'Developed an intuitive dashboard offering customizable views, allowing admin to organize and manage applications seamlessly. This dashboard provided an overview of articles management, comments moderation, and user control.',
+        'Utilized: PHP, JavaScript, AJAX/JQuery, MySQL, Bootstrap, HTML/CSS.',
       ],
+      url: 'https://falling-terrains.000webhostapp.com/',
     },
     {
-      title: 'Weather App',
+      title: 'Dynamic Book Search Web Application',
       duration: 'Aug 2023',
       description: [
-        'This weather application was developed in Java.',
-        'The app uses the WeatherAPI to retrieve live weather data according to the user\'s input.',
-        'It delivers current weather details such as temperature, humidity, wind speed, and forecasts specific to the chosen location.',
+        'Crafted a dynamic book search web application leveraging React, Axios, and the Google Books API. This platform enables users to explore a vast collection of books and obtain details about their favorite reads effortlessly.',
+        'Leveraged Axios to handle asynchronous HTTP requests to the Google Books API for fetching book data.',
+        'Utilized: React, Axios, Google Books API, Tailwind, HTML/CSS.',
       ],
+      url: 'https://find4books.netlify.app/',
     },
     {
       title: 'GPA Calculator',
       duration: 'Jul 2023',
       description: [
-        'Designed and implemented an Android application using Java and a SQLite database.',
-        'The app enables users to input courses and grades for GPA calculation while providing visual graphs to track academic progress.',
+        'Developed an app enables users to input courses and grades for GPA calculation while providing visual graphs to track academic progress.',
+        'Utilized: Java, Android Studio, SQLite.'
       ],
+      url: 'https://github.com/HaikalE/CGPA-CALCULATOR_APP/tree/master',
     },
     {
       title: 'The Education Game: "My Arabic Journey"',
       duration: 'Jun 2023',
       description: [
-        'Aims to teach Arabic vocabulary through interactive lessons.',
-        'Incorporates pronunciation guidance for each word and includes quizzes to reinforce learning.',
-        'Developed using Bootstrap, HTML, and JavaScript.',
-        'Incorporates a quiz section facilitated by Node.js.',
+        'Aiming to teach Arabic vocabulary through interactive lessons. It incorporates pronunciation guidance for each word and includes quizzes to reinforce learning.',
+        'Utilized: Bootstrap, HTML, JavaScript, Node.js.',
       ],
+      url: 'https://github.com/killuazoldyckk/ArabicJourney',
     },
     // Add other university projects here...
   ];
@@ -123,8 +123,10 @@ const Body = () => {
   };
 
   return (
+    
     <div className="mx-4 my-8 sm:mx-auto max-w-3xl">
       {/* Header */}
+      <br/>
       <div className="mb-6 text-center">
         <h1 className="text-3xl font-bold mb-4">Muhammad Haikal Rahman</h1>
       </div>
@@ -246,22 +248,27 @@ with adaptability to create user-centric solutions that push technological bound
       <br/>
       {/* University Projects */}
       <div id='projects'>
-        <h2 className="text-2xl font-bold mb-2">UNIVERSITY PROJECTS</h2>
-        {universityProjects.map((project, index) => (
-          <div key={index} className="mb-4">
-            <h3 className="text-lg font-semibold">{project.title}</h3>
-            <p>{project.duration}</p>
-            <ul className="list-disc list-inside mb-2">
-              {project.description.map((detail, idx) => (
-                <li key={idx}>{detail}</li>
-              ))}
-            </ul>
-          </div>
+  <h2 className="text-2xl font-bold mb-2">UNIVERSITY PROJECTS</h2>
+  {universityProjects.map((project, index) => (
+    <div key={index} className="mb-4">
+      <h3 className="text-lg font-semibold">{project.title}</h3>
+      <p>{project.duration}</p>
+      <ul className="list-disc list-inside mb-2">
+        {project.description.map((detail, idx) => (
+          <li key={idx}>{detail}</li>
         ))}
-      </div>
-      <div>
-      
+      </ul>
+      <a
+        href={project.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out"
+      >
+        Visit Project
+      </a>
     </div>
+  ))}
+</div>
     </div>
 
   );
