@@ -132,13 +132,10 @@ const Body = () => {
       </div>
       <div className="mb-6">
         <div className='mb-2' id='education'>
-        Innovative software developer pursuing a Computer Science degree at Universitas 
-Sumatera Utara with recent participation in exchange program at UiTM Shah Alam, 
-Malaysia. Possesses a robust foundation in software development, skilled in diverse 
-programming languages, database management, Agile methodologies, and crafting 
-responsive web applications and mobile experiences. Achieved recognition through an 
-exchange program and approaches software development by blending innovative thinking 
-with adaptability to create user-centric solutions that push technological boundaries.
+        An ardent Computer Science student deeply passionate about the intricacies of software 
+development, constantly driven by an insatiable curiosity to explore the multifaceted realms 
+of coding and programming. 
+
 
         </div>
         <br/>
