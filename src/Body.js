@@ -80,7 +80,7 @@ const Body = () => {
         'Developed an intuitive dashboard offering customizable views, allowing admin to organize and manage applications seamlessly. This dashboard provided an overview of articles management, comments moderation, and user control.',
         'Utilized: PHP, JavaScript, AJAX/JQuery, MySQL, Bootstrap, HTML/CSS.',
       ],
-      url: 'https://falling-terrains.000webhostapp.com/',
+      url: 'https://kitabinaweb.000webhostapp.com/index.php',
     },
     {
       title: 'Dynamic Book Search Web Application',
