@@ -162,7 +162,7 @@ of coding and programming.
           </h3>
           <p>Universitas Sumatera Utara, Medan</p>
           <ul className="list-disc list-inside mb-2">
-            <li>GPA: 3.83 / 4.00</li>
+            <li>GPA: 3.88 / 4.00</li>
             <li>
               Relevant Coursework: Database; Cryptography; Object Oriented
               Programming; Data and Information Security; Design and Algorithm
