@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Body = () => {
   const skills = [
@@ -46,18 +46,6 @@ const Body = () => {
       image: 'image/certifications/ibm-fullstack.jpg',
     },
   ];
-  const volunteerExperience = [
-    {
-      title: 'Secretary of Communication and Information',
-      organization: 'Ikatan Mahasiswa Prodi S-1 Ilmu Komputer Universitas Sumatera Utara',
-      duration: 'Oct 2023 - Present',
-      responsibilities: [
-        'Effectively delegated tasks within the department, ensuring deadlines were met.',
-        'Monitored social media analytics to improve engagement and reach.',
-        'Produced comprehensive work program reports for decision-making.',
-      ],
-    },
-  ];
   const internshipExperience = [
     {
       title: 'Data Engineer Intern',
@@ -71,25 +59,6 @@ const Body = () => {
       ],
     },
   ];
-  const universityProjects = [
-    {
-      title: 'Telegram Ticketing Bot',
-      duration: 'Feb 2023 - Jun 2024',
-      description: [
-        'Reduced ticket resolution time by 35% through automation.',
-        'Utilized: Python, Telegram API, Power BI.',
-      ],
-    },
-  ];
-  const [fullscreenImage, setFullscreenImage] = useState(null);
-
-  const handleImageClick = (image) => {
-    setFullscreenImage(image);
-  };
-
-  const handleCloseFullscreen = () => {
-    setFullscreenImage(null);
-  };
 
   return (
     <div className="mx-4 my-8 sm:mx-auto max-w-3xl">
@@ -142,7 +111,6 @@ const Body = () => {
           </ul>
         </div>
       ))}
-      {/* Skills */}
       <h2 className="text-2xl font-bold mb-2">SKILLS</h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {skills.map((skill, index) => (
@@ -153,7 +121,11 @@ const Body = () => {
       </div>
       <h2 className="text-2xl font-bold mb-2">LICENSES & CERTIFICATIONS</h2>
       {certifications.map((cert, index) => (
-        <div key={index}>{cert.title}</div>
+        <div key={index}>
+          <h3 className="text-lg font-semibold">{cert.title}</h3>
+          <p>{cert.organization}</p>
+          <p>{cert.code}</p>
+        </div>
       ))}
     </div>
   );
